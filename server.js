@@ -12,6 +12,7 @@ app.get('/*', function(req,res) {
     
 res.sendFile(path.join(__dirname));
 });
+console.log("data");
 
 // Start the app by listening on the default Heroku port
 const server = http.createServer(app);
